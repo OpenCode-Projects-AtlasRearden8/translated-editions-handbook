@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budgeting: AI Translation + Human Review · Selling Translated Editions</title>
+<meta name="description" content="Honest 2026 price ranges: where every dollar goes and the cheapest version that still protects your name.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-book">Selling Translated Editions</span>
+      <span class="brand-sub">A Handbook for Authors</span>
+    </a>
+    <p class="byline">by Dylan Asdale · Asdale Dynamics, LLC</p>
+  </div>
+</header>
+<nav class="chapter-nav" aria-label="Chapters">
+  <div class="wrap">
+    <a href="00-introduction.html">Introduction</a>
+    <a href="01-choosing-target-languages.html">Languages</a>
+    <a href="02-rights-in-plain-english.html">Rights</a>
+    <a href="03-budgeting-ai-plus-human-review.html" aria-current="page">Budget</a>
+    <a href="04-the-workflow-draft-to-final.html">Workflow</a>
+    <a href="05-bilingual-qa.html">QA</a>
+    <a href="06-covers-subtitles-and-re-layout.html">Layout</a>
+    <a href="07-marketing-to-readers-abroad.html">Marketing</a>
+    <a href="08-going-live-staying-live.html">Going Live</a>
+    <a href="09-checklists-and-templates.html">Templates</a>
+  </div>
+</nav>
+<main class="wrap">
+<article class="chapter">
+<h1 id="top">Budgeting: AI Translation + Human Review</h1>
+<p class="chapter-kicker">Chapter 3</p>
+<p><strong>The one-sentence version:</strong> a careful, human-reviewed AI-assisted translation of a typical 40,000–60,000-word nonfiction or short-fiction book costs roughly <strong>$300–$900 per language</strong> in the 2026 market — and every dollar below that range usually comes out of quality, not luck.</p>
+<p>This chapter gives you honest numbers: what things cost, what the cheapest truly-insurable version of the project looks like, where authors waste money, and where under-spending hurts. All figures are in USD and describe realistic 2026 market rates; adjust for inflation and for your own research when you get real quotes.</p>
+<h2 id="3-1-what-the-full-pipeline-actually-consists-of">3.1 What the full pipeline actually consists of</h2>
+<p>Moving a book from English to another language, done right, involves these components. Each has its own cost shape.</p>
+<table><thead><tr><th>#</th><th>Component</th><th>Who/what does it</th><th>Cost shape</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Source prep (frozen file, clean markdown/DOCX, no track changes, notes resolved)</td><td>You</td><td>Free, but see 3.2 for why it isn't trivial</td></tr>
+<tr><td>2</td><td>AI translation draft</td><td>You + AI (any capable long-context model)</td><td>$0–$30 in API/subscription costs depending on model and length</td></tr>
+<tr><td>3</td><td>Human review / edit of the translation</td><td>A native-speaking professional</td><td><strong>$150–$600</strong> (the big line item)</td></tr>
+<tr><td>4</td><td>Proofread of the final reviewed file (light read for typos/formatting)</td><td>Same person or a second, cheaper pair of eyes</td><td>$0–$150</td></tr>
+<tr><td>5</td><td>QA (bilingual sample checks, terminology sheet, metadata)</td><td>You + reviewer</td><td>$0 (your time) or bundled into #3</td></tr>
+<tr><td>6</td><td>Cover adaptation</td><td>You (or designer, if you don't make covers)</td><td>$0–$100 "text shipment" changes; ~$50–$250 if a designer touches it</td></tr>
+<tr><td>7</td><td>Interior re-layout</td><td>You (template regeneration)</td><td>$0–$50 for float/fixed-format book</td></tr>
+<tr><td>8</td><td>Store setup and metadata</td><td>You</td><td>Free (Amazon/KDP, Draft2Digital)</td></tr>
+</tbody></table>
+<p>The numbers that surprise new author-translators: <strong>#1 and #5 are free but dominate quality</strong>, and <strong>#3 is the only step that reliably protects your name.</strong></p>
+<h2 id="3-2-the-one-cost-you-can-t-buy-your-way-out-of-preparing-the-source">3.2 The one cost you can't buy your way out of: preparing the source</h2>
+<p>What AI translation models do well now: faithful transfer of text that's already clean, well-structured, and free of ambiguity. What they do badly, or inconsistently: guess what you meant if you haven't decided yet.</p>
+<p>So the preparation step — your first real job — includes:</p>
+<ul>
+<li><strong>Freeze the content.</strong> Pick the exact version. Copy it to a file named <code>book-source-en-2026-05-01.docx</code> (or <code>.md</code>) and translate <em>that</em>. Offline-fix a typo? Update the frozen file and note it. Change your mind mid-stream? Re-do the affected sections through the full pipeline. Do not let source and translated edition drift.</li>
+<li><strong>Kill ambiguity.</strong> Resolve every dangling pronoun, every "see the chapter before this," every note-to-self in comments. AI translation carries unresolved ambiguity into another language and <em>multiplies</em> there, where you can't see it.</li>
+<li><strong>Terminology list.</strong> Make a small table of 30–50 domain-specific terms before translating: names of your frameworks, acronyms (KDP Select, LLM, FFXIV, XR), recurring jokes, product names, place names, whether bullets should be translated at all. Hand this to both the AI (as a glossary/prompt constraint) and the human reviewer (who will keep it consistent).</li>
+<li><strong>Format decisions.</strong> If your English book has tables, code blocks, or sidebars, decide now that they'll be translated as their own blocks. AI models handle this well when told; badly when surprised.</li>
+<li><strong>Cut what shouldn't cross borders.</strong> Anything that doesn't read well in translation usually shows up during prep: US-only jokes, regionally specific measurements (give metric wherever it isn't semantically dangerous), and American cultural references with no equivalent. Your reviewer will catch more; you catch the big ones now for free.</li>
+</ul>
+<p>For a typical book, this prep is a <strong>full working week of real time</strong>, and it's the difference between a translation that needs one careful pass and one that needs three. A rushed source file costs the reviewer more, which the reviewer wisely quotes into the next revision's fee.</p>
+<h2 id="3-3-what-human-review-costs-honestly">3.3 What human review costs, honestly</h2>
+<p>This is the step where naive authors and professional translators both get fed up with each other, so let's be concrete. Rates for <em>reviewing a quality AI-assisted draft of a book</em> vary by language pair and translator seniority. In 2026, for reference:</p>
+<table><thead><tr><th>Language</th><th>Typical review rate, per 1,000 words</th><th>What this implies for a 50,000-word book</th></tr></thead>
+<tbody>
+<tr><td>Spanish (Latin American)</td><td>$8–$18</td><td>$400–$900</td></tr>
+<tr><td>Portuguese (Brazilian)</td><td>$7–$15</td><td>$350–$750</td></tr>
+<tr><td>Italian, French, German</td><td>$10–$25</td><td>$500–$1,250</td></tr>
+<tr><td>Japanese</td><td>$12–$30</td><td>$600–$1,500</td></tr>
+<tr><td>Hindi, Indonesian, Tagalog, Vietnamese</td><td>$5–$12</td><td>$250–$600</td></tr>
+</tbody></table>
+<p>Ways to land at the low end <em>without</em> cutting quality corners:</p>
+<ul>
+<li><strong>AI did the heavy lifting.</strong> The reviewer is not translating from scratch; they are reviewing a draft that's already 80–90% senible. Quote the task honestly as "review/edit of AI-assisted draft" — it is a different task from translation, priced lower, and experienced translators know it.</li>
+<li><strong>Your source was prepared.</strong> The cleaner the source, the fewer "wait, what does the author mean" queries they send you back, the less back-and-forth, the lower the bill.</li>
+<li><strong>You pay for milestones, not goodwill.</strong> A reviewer who is paid 3 chapters up front, then per-delivery, moves faster than one holding an unpaid invoice at the end.</li>
+<li><strong>A lighter final proof.</strong> If your reviewer is senior, hire a second, junior native speaker to proofread the final file rather than paying the senior to re-read. Cheaper for the last 5% of polish.</li>
+</ul>
+<p>Ways authors blow the budget (so you can avoid them):</p>
+<ol>
+<li><strong>Going back to the reviewer four times because the English source kept changing.</strong> Each re-open costs $50–$150.</li>
+<li><strong>Unnecessarily re-reviewing the <em>whole book</em> after a 2% fix.</strong> Contract for <em>pass-review of changed sections only</em> after the first full pass. Get this in writing.</li>
+<li><strong>Using Fiverr/Upwork at the absolute cheapest rate and then re-doing everything.</strong> A $100 review of bad AI output is $100 spent on doing it once.</li>
+<li><strong>Paying a translator full translation rate when you wanted a review rate</strong> because you asked for the wrong deliverable. Be explicit in the job posting.</li>
+</ol>
+<h2 id="3-4-the-scenario-cased-budget-what-you-d-actually-pay">3.4 The scenario-cased budget (what you'd actually pay)</h2>
+<p>Using honest middle-rate numbers for a <strong>50,000-word Spanish edition with a prepared source</strong>:</p>
+<table><thead><tr><th>Scenario</th><th>AI draft</th><th>Review</th><th>Extra QA/design/layout</th><th>Total</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><strong>Minimum viable</strong></td><td>$0 (free-tier AI)</td><td>$400 (regional rate, new freelancer)</td><td>$0 (you do cover and layout)</td><td><strong>$400</strong></td><td>One full human pass, no second proof</td></tr>
+<tr><td><strong>Recommended</strong></td><td>$10 (better model/API)</td><td>$500 (experienced reviewer)</td><td>$100 (second-pass proofread, ~2 hours; a template cleanup)</td><td><strong>$600</strong></td><td>The version we recommend for a serious book</td></tr>
+<tr><td><strong>Conservative</strong></td><td>$20 (premium API)</td><td>$700 (senior reviewer with niche knowledge)</td><td>$200 (designer adjusts cover) + $100 proofread</td><td><strong>$1,020</strong></td><td>For a book with your name's integrity riding on it in a market you'll expand into</td></tr>
+<tr><td><strong>Multi-language starter pack</strong></td><td>$30</td><td>$1,500 (2 languages × $500, senior shared) + $300</td><td>$400</td><td><strong>~$2,200</strong></td><td>Two coordinated editions (e.g., es + pt) with shared QA infrastructure</td></tr>
+</tbody></table>
+<p>The multi-language scenario has a hidden efficiency worth naming: <strong>the second language costs less than the first</strong>. Your frozen source file, terminology sheet, review contract template, cover template, and QA process all exist after the first pass. The second language's marginal cost is essentially AI + new reviewer + your QA time. Plan for a <strong>catalog</strong>, not one-off, and your per-language cost drops 20–40% by edition three.</p>
+<h2 id="3-5-where-to-spend-and-where-to-save">3.5 Where to spend and where to save</h2>
+<p><strong>Spend on:</strong></p>
+<ol>
+<li><strong>The reviewer.</strong> Language-matched, genre-matched, and fluent <em>in your niche vocabulary</em>. A reviewer who has translated books in your genre is worth 2x a reviewer who has translated <em>documents</em>.</li>
+<li><strong>Prepared source.</strong> An extra week of prep will save a month of re-reviews. The prep is free but time-intensive; it is the highest-ROI hour count in the whole pipeline.</li>
+<li><strong>The model, where it matters.</strong> Difference between a cheap and mid-tier model on draft translation quality for well-structured nonfiction is smaller than the difference between a bad and a good reviewer — but on tricky fiction, historically-inaccurate idiomatic dialogue, or technical code, premium model tiers matter. For a how-to book, a mid-tier model is fine.</li>
+</ol>
+<p><strong>Save on:</strong></p>
+<ol>
+<li><strong>You.</strong> Freezer-prep, glossary, layout, and store setup are your work; not paying those out is how the arithmetic works for solo authors.</li>
+<li><strong>Cover tweaks vs. cover rebuilds.</strong> If your cover is typographic (just the title + name on a clean background), translating it is a 15-minute budget ($0); if it's an elaborate illustrated scene with side text (Chapter <a href="06-covers-subtitles-and-re-layout.html">06</a>), plan $50–$250 for a designer.</li>
+<li><strong>Avoid mid-process re-model switches.</strong> Pick a model, run through, review. Switching models mid-book costs you redo time for marginal quality gains you likely can't measure.</li>
+</ol>
+<h2 id="3-6-revenue-share-alternative-babelcube-style-platforms">3.6 Revenue-share alternative (Babelcube-style platforms)</h2>
+<p>There are platforms where you publish a translation and the translator gets a percentage of sales instead of an upfront fee (Babelcube historically is the example; smaller marketplaces come and go). Three things to know:</p>
+<ul>
+<li><strong>The math</strong>: A revenue-share translator takes, say, 30–50% of net forever. Over a book that eventually earns $4,000, that's $1,200–$2,000 versus your $500 upfront. <strong>If you're confident in demand, paying is cheaper.</strong> If you're testing a language you're unsure about, revenue-share costs nothing until it works.</li>
+<li><strong>The control trade</strong>: On some platforms the translator's leverage includes <em>how</em> the translation reads. You still own the copyright in most revenue-share contracts, but the working relationship is brokered and less personal than a direct hire.</li>
+<li><strong>The QA gap</strong>: Revenue-share platforms rarely give you a second pair of eyes on the <em>reviewer's</em> work. Your bilingual QA (Chapter <a href="05-bilingual-qa.html">05</a>) becomes more important, not less.</li>
+</ul>
+<p>We consider revenue-share a <strong>legitimate trial channel</strong> for a book in a language that has scored 18–21 on the Chapter <a href="01-choosing-target-languages.html">01</a> sheet — worth testing, not obviously worth paying full rate for yet.</p>
+<h2 id="3-7-budget-worksheet-with-the-numbers-filled-in-for-you">3.7 Budget worksheet (with the numbers filled in for you)</h2>
+<p>This is the worksheet from Chapter <a href="09-checklists-and-templates.html">09</a> with example numbers, for the "Recommended" Spanish scenario above:</p>
+<pre><code>TRANSLATED EDITION BUDGET — Spanish edition, 50,000-word nonfiction book
+Author/LLC: Asdale Dynamics, LLC   Source frozen: 2026-05-01
+
+AI translation draft                    $   10   (mid-tier model, ~$0.0002/word w/ glossary)
+Reviewer fee (senior native, 1 full pass + 1 change review)
+  - review pass                         $  450
+  - final change review pass            $   50
+Second proofread (junior native, 2h)    $  100
+Cover text shipment + spine check         $   0   (typographic cover, I do it)
+Interior re-layout (template)             $   0   (same template)
+Terminology sheet creation                 $   0   (my time, 4 hours)
+Bilingual QA (sample checks)               $   0   (my time + 3rd-party check ~$75)
+Third-party spot-check QA, 2,000 words   $   75
+Contingency (10%)                        $   68
+                                         ------
+TOTAL                                   $  753</code></pre>
+<p>Where the contingency is genuinely there to be spent: a re-review because the reviewer took a month off, a per-country pricing adjustment you hadn't predicted, a cover designer fee if the text doesn't fit the cover, or a small rush fee when your launch date collides with Amazon promotion scheduling.</p>
+<h2 id="bottom-line">Bottom line</h2>
+<p>A realistic, well-budgeted translated edition — of a prepared, frozen source — costs <strong>$400–$1,000 per language</strong> in 2026, with most of the variance in the reviewer's rate and seniority. The cheapest safe version of the project is: prepared source, mid-tier model for the draft, one experienced native reviewer, one junior proofread, and you doing everything else. Two languages in one calendar window cost less than two languages in two windows, because the second language reuses your process. And if a platform wants to translate your book for free in exchange for its rights, read Chapter <a href="02-rights-in-plain-english.html">02</a> twice before you accept.</p>
+<p><em>Next: <a href="04-the-workflow-draft-to-final.html">The Workflow: Draft to Final</a> — week by week, what actually happens.</em></p>
+</article>
+<nav class="pager">
+  <a href="02-rights-in-plain-english.html">← Rights in Plain English</a>
+  <a href="04-the-workflow-draft-to-final.html">The Workflow: Draft to Final →</a>
+  <a class="toc-link" href="index.html">Contents</a>
+</nav>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Selling Translated Editions · A Handbook for Authors · by Dylan Asdale</p>
+    <p>Published by <strong>Asdale Dynamics, LLC</strong> · Released under the MIT License ·
+       Copyright (c) 2026 Asdale Dynamics, LLC</p>
+    <p class="fine">Educational material only — not legal advice. Built as a static site; no trackers, no data collection.</p>
+  </div>
+</footer>
+
+</body>
+</html>
